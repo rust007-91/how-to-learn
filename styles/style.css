@@ -18,6 +18,7 @@
   /* выше установили ограничения для секции */
   background: #f2f2f2;
   display: flex;
+  overflow: hidden;
 }
 
 .logo_place_header {
@@ -122,6 +123,79 @@
   font-weight: 600;
 }
 
+.techniques {
+  width: 80%;
+  margin: 100px auto 0;
+}
+
+.cards {
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.cards__item {
+  max-width: 240px;
+  width: 100%;
+  margin-right: 100px;
+  list-style-type: none;
+}
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin: 60px 40px 43px;
+}
+
+.cards__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+
+.cards__description {
+  margin: 0;
+  padding-top: 16px;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+}
+
+.video {
+  margin-top: 100px;
+}
+
+.video__iframes {
+  display: flex;
+  justify-content: center;
+  transform: translateY(50px);
+}
+
+.video__iframe:first-of-type {
+  margin-right: 20px;
+}
+
+.oakley {
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+  background-color: #f2f2f2;
+}
+
 .digits {
   margin: 100px 0;
 }
@@ -176,6 +250,82 @@
   font-size: 18px;
   font-weight: normal;
   color: #000;
+}
+
+.khan {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.khan__container {
+  margin: 0 auto;
+  padding-top: 105px;
+  width: 80%;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  color: #000;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  color: #000;
+}
+
+.khan__quote {
+  margin: 0;
+  max-width: 790px;
+  padding-top: 50px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #000;
+}
+
+.khan__quote-author {
+  margin: 0;
+  padding-top: 36px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.khan__quote-author-subline {
+  margin: 0;
+  padding-top: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  color: #000;
+}
+
+.khan__book-container {
+  display: flex;
+  padding-top: 68px;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 48px;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #2f80ed;
 }
 
 .feynman {
@@ -257,6 +407,24 @@
   z-index: 2;
 }
 
+.resources {
+  margin: 100px 0 217px;
+}
+
+.resources__logo-zone {
+  margin: 0 auto;
+  width: 1100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0 0;
+  list-style-type: none;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+}
+
 .table__text_theme_dark {
   color: #fff;
   z-index: 2;
@@ -280,7 +448,6 @@
 
 .footer__column {
   display: flex;
-
 }
 
 .footer__column_content_copyright {
@@ -330,7 +497,6 @@
   font-weight: normal;
   color: #fff;
   text-decoration: none;
-
 }
 
 .footer__social-icon {
@@ -339,3 +505,20 @@
   max-height: 16px;
 }
 
+.page__link:hover {
+  transition-duration: 0.5s;
+  opacity: 60%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page-rotation {
+  animation: rotation 20s linear normal infinite;
+}
