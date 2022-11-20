@@ -1,9 +1,9 @@
-@import "../styles/normalize.css";
+@import "../vendor/normalize.css";
 
 @import "../blocks/page/page.css";
 @import "../blocks/page/__link/page__link.css";
 
-@import "../blocks/page-rotation/page-rotation.css";
+@import "../blocks/rotation/rotation.css";
 
 @import "../blocks/header/header.css";
 @import "../blocks/header/__tittle/header__title.css";

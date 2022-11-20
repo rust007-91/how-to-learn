@@ -7,6 +7,6 @@
   }
 }
 
-.page-rotation {
+.rotation {
   animation: rotation 20s linear normal infinite;
 }
