@@ -19,6 +19,8 @@
 * БЭМ
 * CSS Flexbox
 
+[Ссылка на сайт](https://rust007-91.github.io/how-to-learn/)
+
 Cтатус проекта:
 
 Завершен.
