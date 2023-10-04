@@ -1,4 +1,4 @@
-/*@import "../vendor/normalize.css";*/
+@import "../vendor/normalize.css";
 
 @import "../blocks/page/page.css";
 @import "../blocks/page/__link/page__link.css";
